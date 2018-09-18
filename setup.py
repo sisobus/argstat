@@ -5,6 +5,11 @@ import re
 
 IS_PY_2 = (sys.version_info[0] <= 2)
 
+def read_readme():
+    __PATH__ = os.path.abspath(os.path.dirname(__file__))
+    with open(os.path.join(__PATH__, 'README.md')) as fp:
+        return fp.read()
+
 def read_version():
     __PATH__ = os.path.abspath(os.path.dirname(__file__))
     with open(os.path.join(__PATH__, 'argstat/__init__.py')) as fp:
@@ -24,6 +29,7 @@ setup(
     name='argstat',
     version=read_version(),
     description='Beutiful printer for arguments',
+    long_description=read_readme(),
     url='https://github.com/sisobus/argstat',
     author='sisobus',
     author_email='sisobus1@gmail.com',
