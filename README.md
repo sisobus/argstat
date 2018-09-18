@@ -42,7 +42,8 @@ $ pip install argstat
 >>> print (argstat)
 ```
 
-![Screenshot](screenshot.png |width=300)
+<img width="250" alt="screenshot" src="https://user-images.githubusercontent.com/3329885/45678036-8eb8b100-bb70-11e8-8205-94c7dcd604a1.png">
+
 
 ## Example 2
 ```
