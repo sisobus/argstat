@@ -2,7 +2,10 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-from six.moves import cStringIO as StringIO
+try:
+    from StringIO import StringIO
+except ImportError:
+    from io import StringIO
 import argparse
 from blessings import Terminal
 import sys
@@ -67,10 +70,12 @@ class Argstat:
                                  **colors)
             else:
                 for arg in vars(args):
+                    #if getattr(args, arg, None) is None:
+                    #    continue
                     s = "{line}|{argname}{:>"+str(self.max_argname_length)+"}"
                     s += " : {value}{:<"+str(self.max_value_length)+"} {line}|"
                     s += "\n"
-                    reps += s.format(arg, getattr(args, arg), **colors)
+                    reps += s.format(arg, str(getattr(args, arg, None)), **colors)
             reps += "{line}o{}o{normal}\n\n".format('-'*(total_line_length),
                                                     **colors)
         fp.write(reps)

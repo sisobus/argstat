@@ -31,7 +31,7 @@ setup(
     description='Beutiful printer for arguments',
     long_description=read_readme(),
     url='https://github.com/sisobus/argstat',
-    author='sisobus',
+    author='Sangkeun Kim',
     author_email='sisobus1@gmail.com',
 
     license='MIT',
@@ -43,7 +43,7 @@ setup(
         #   3 - Alpha
         #   4 - Beta
         #   5 - Production/Stable
-        'Development Status :: 5 - Production/Stable',
+        'Development Status :: 3 - Alpha',
 
         # Indicate who your project is intended for
         'Intended Audience :: Developers',

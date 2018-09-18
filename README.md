@@ -66,3 +66,11 @@ $ pip install argstat
 >>> argstat = Argstat(parser)
 >>> print (argstat.jsonify())
 ```
+
+## Example 5
+```
+>>> ① ~ ②
+>>> argstat = Argstat(parser)
+>>> with open("path","w") as fp:
+>>>     argstat.print_to(fp, False)
+```

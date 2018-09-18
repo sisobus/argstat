@@ -1,6 +1,7 @@
 *.swa
 *.swp
 venv/*
+venv3/*
 *.py[cod]
 .DS_Store
 __pycache__/*
