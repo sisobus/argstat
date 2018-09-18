@@ -42,7 +42,7 @@ $ pip install argstat
 >>> print (argstat)
 ```
 
-![Screenshot](screenshot.png)
+![Screenshot](screenshot.png =300x)
 
 ## Example 2
 ```
