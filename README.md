@@ -9,6 +9,7 @@ $ pip install argstat
 ## Example 1
 ```
 >>> from argstat import Argstat # ①
+>>> import argparse
 >>>
 >>> parser = argparse.ArgumentParser()
 >>> input_args = parser.add_argument_group('Input args')
@@ -40,6 +41,8 @@ $ pip install argstat
 >>> argstat = Argstat(parser)
 >>> print (argstat)
 ```
+
+![Screenshot](screenshot.png)
 
 ## Example 2
 ```
